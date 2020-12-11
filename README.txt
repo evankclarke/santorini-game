@@ -1,0 +1,7 @@
+Video Link: https://youtu.be/0BchV1PGE0k
+
+This project is a simple turn-based board game involving one player, who plays against the computer. The board is initialized as a 7 by 7 multidimensional array, with row 0 and column 0 denoting the coordinate axes of the board. Each player has one builder, which can move one square horizontally, vertically or diagonally each turn.
+
+The startingPosition method prompts the user to indicate his desired starting coordinates. It places the CPU one row above or below that square, depending on the player’s location. After that, userMovePrompt, asks the user where he would like to move next. The helper method isValidMove ensures that the player’s entry is a valid move in accordance with the game rules. updateBoardPlayer then updates the building levels based on the player’s move, and printBoard prints out the result and current score. isGameOver is then used to check if there is a game ending condition.
+
+After that, it is the AI’s turn. The AI’s strategy is to move to the highest valued square within its 8-coordinate octagon of possible moves. This way the subsequent move will lower that highest-numbered square. The function moveCPU accomplishes this strategy, and then updateBoardCPU updates the board based on that move. Print board then prints the result and score. The program loops through the player and CPU turns until a game ending condition is satisfied.
